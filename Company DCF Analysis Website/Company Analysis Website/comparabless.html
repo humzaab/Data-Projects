@@ -1,0 +1,650 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+    <head>
+        <!-- META DATA -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		
+      <script src="script.js"></script>
+
+        <!--font-family-->
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+		
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+		
+        <!-- TITLE OF SITE -->
+        <title>Zombiz</title>
+<link rel="shortcut icon" href="../favicon.ico">
+
+
+		<link rel="stylesheet" type="text/css" href="component2.css" />
+		<script src="modernizr-2.6.2.min.js"></script>
+        <!-- for tittle img -->
+		<link rel="shortcut icon" type="image/icon" href="favicon.png"/>
+       
+        <!--font-awesome.min.css-->
+        <link rel="stylesheet" href="font-awesome.min.css">
+		
+		<!--linear icon css-->
+		<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"
+		
+		<!--animate.css-->
+        <link rel="stylesheet" href="animate.css">
+		
+		<!--hover.css-->
+        <link rel="stylesheet" href="hover-min.css">
+              <link rel="stylesheet" href="style.css">
+
+		
+		<!--vedio player css-->
+        <link rel="stylesheet" href="magnific-popup.css">
+
+
+		<!--owl.carousel.css-->
+        <link rel="stylesheet" href="owl.carousel.min.css">
+		<link href="owl.theme.default.min.css" rel="stylesheet"/>
+
+
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="bootstrap.min.css">
+		
+		<!-- bootsnav -->
+		<link href="bootsnav.css" rel="stylesheet"/>	
+        
+        <!--style.css-->
+        <link rel="stylesheet" href="style1.css">
+        
+        <!--responsive.css-->
+        <link rel="stylesheet" href="responsive.css">
+        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		
+        <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+	
+	<body onload="readData()">
+		<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+		
+		
+		
+		<!--menu start-->
+		<section id="menu">
+			<div class="container">
+				<div class="menubar">
+					<nav class="navbar navbar-default">
+					
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="index.html">
+								<img id="logo" src="http://www.budapestjobs.net/wp-content/uploads/company_logos/2018/09/PlanetPlanrIdentification.png"  alt="logo">
+							</a>
+						</div><!--/.navbar-header -->
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-right">
+								<li class="smooth-menu">
+									<a href="index.html">Home</a>
+								</li>
+								<li class="smooth-menu"><a href="balance-sheet.html">Balance Sheet</a></li>
+								<li class="smooth-menu"><a href="cash-flow.html">Cash Flow Statement</a></li>
+								<li class="smooth-menu"><a href="income-statement.html">Income Statement</a></li>
+								<li class="smooth-menu"><a href="comparabless.html">Comparables</a></li>
+								
+								
+							</ul><!-- / ul -->
+						</div><!-- /.navbar-collapse -->
+					</nav><!--/nav -->
+				</div><!--/.menubar -->
+			</div><!-- /.container -->
+
+		</section><!--/#menu-->
+		<!--menu end-->
+		
+		<!-- header-slider-area start -->
+    <section class="header-slider-area"></section>  
+			<div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
+			
+			  
+			<center>
+		<h1>Comparables</h1>
+
+    <p>
+      Enter the ticker symbol in the input box to get comparable ratios for a company. You can save them with the button below.<br> Use the dropdown button to search for company tickers.
+    </p>
+        </center>
+        <br>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+       
+
+    <center>
+<div class="dropdown">
+  <button id="drop" onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </div>
+</div>
+          </center>
+
+    <center>
+    <br>
+
+      <br>
+<button onclick="resets();">Reset</button>
+    </center>
+    <br>
+    <br>
+    <br>
+
+    
+  <center>
+     <div id="a"></div> <br>
+    <img id="img1"  height="42" width="42">
+
+      <div id="b"></div>
+      <div id="c"></div>
+
+    <h4>By: <span contenteditable="true" id="comic-author">Your name here</span></h4>
+        
+        </center>
+        
+    <br>
+    
+        
+<table id="table" cellspacing="10">
+  <tr>
+    <th>Company</th>
+    <th class="ni" id="ni0">Net Income </th>
+    <th  class="ni" id="cr">&nbsp; Current Ratio</th>
+    <th  class="ni" id="pcf"> &nbsp; Price to CashFlow Ratio</th>
+    <th  class="ni" id="cfb"> &nbsp; Cash Flow to Debt Ratio</th>
+    <th  class="ni" id="cfc"> &nbsp; Cash Flow Coverage Ratio</th>
+    <th  class="ni" id="at"> &nbsp; Asset Turnover</th>
+    <th  class="ni" id="roe"> &nbsp; Return on Equity</th>
+
+
+  </tr>
+  <tr id="1">
+
+    <td id="data1">    <input id="ticker1" placeholder="enter ticker symbol">
+      
+      <button class="submit" onclick="submit(1);">
+      Submit
+    </button>
+  
+</td> 
+    <td class="ni" id="ni1"></td>
+    <td class="ni" id="cr1"></td>
+    <td class="ni" id="pcf1"></td>
+    <td class="ni" id="cfb1"></td>
+    <td class="ni" id="cfc1"></td>
+    <td class="ni" id="at1"></td>
+    <td class="ni" id="roe1"></td>
+
+  </tr>
+  <tr>
+    <td id="data2"> 
+      <input id="ticker2" placeholder="enter ticker symbol">
+      
+      <button class="submit" onclick="submit(2);">
+      Submit
+    </button>
+    
+    </td>
+    <td class="ni" id="ni2"></td>
+    <td class="ni" id="cr2"></td>
+    <td class="ni" id="pcf2"></td>
+    <td class="ni" id="cfb2"></td>
+    <td class="ni" id="cfc2"></td>
+    <td class="ni" id="at2"></td>
+    <td class="ni" id="roe2"></td>
+  </tr>
+  
+   <tr>
+    <td id="data3"> 
+      <input id="ticker3" placeholder="enter ticker symbol">
+      
+      <button class="submit" onclick="submit(3);">
+      Submit
+    </button>
+    
+    </td>
+    <td class="ni" id="ni3"></td>
+             <td class="ni" id="cr3"></td>
+    <td class="ni" id="pcf3"></td>
+    <td class="ni" id="cfb3"></td>
+    <td class="ni" id="cfc3"></td>
+    <td class="ni" id="at3"></td>
+    <td class="ni" id="roe3"></td>
+  </tr>
+  
+   <tr>
+    <td id="data4"> 
+      <input id="ticker4" placeholder="enter ticker symbol">
+      
+      <button class="submit" onclick="submit(4);">
+      Submit
+    </button>
+    
+    </td>
+    <td class="ni" id="ni4"></td>
+             <td class="ni" id="cr4"></td>
+    <td class="ni" id="pcf4"></td>
+    <td class="ni" id="cfb4"></td>
+    <td class="ni" id="cfc4"></td>
+    <td class="ni" id="at4"></td>
+    <td class="ni" id="roe4"></td>
+  </tr>
+  
+   <tr>
+    <td id="data5"> 
+      <input id="ticker5" placeholder="enter ticker symbol">
+      
+      <button class="submit" onclick="submit(5);">
+      Submit
+    </button>
+    
+    </td>
+    <td class="ni" id="ni5"></td>
+             <td class="ni" id="cr5"></td>
+    <td class="ni" id="pcf5"></td>
+    <td class="ni" id="cfb5"></td>
+    <td class="ni" id="cfc5"></td>
+    <td class="ni" id="at5"></td>
+    <td class="ni" id="roe5"></td>
+  </tr>
+  
+   <tr>
+    <td id="data6"> 
+      <input id="ticker6" placeholder="enter ticker symbol">
+      
+      <button class="submit" onclick="submit(6);">
+      Submit
+    </button>
+    
+    </td>
+    <td class="ni" id="ni6"></td>
+             <td class="ni" id="cr6"></td>
+    <td class="ni" id="pcf6"></td>
+    <td class="ni" id="cfb6"></td>
+    <td class="ni" id="cfc6"></td>
+    <td class="ni" id="at6"></td>
+    <td class="ni" id="roe6"></td>
+  </tr>
+  
+   <tr>
+    <td id="data7"> 
+      <input id="ticker7" placeholder="enter ticker symbol">
+      
+      <button class="submit" onclick="submit(7);">
+      Submit
+    </button>
+    
+    </td>
+    <td class="ni" id="ni7"></td>
+             <td class="ni" id="cr7"></td>
+    <td class="ni" id="pcf7"></td>
+    <td class="ni" id="cfb7"></td>
+    <td class="ni" id="cfc7"></td>
+    <td class="ni" id="at7"></td>
+    <td class="ni" id="roe7"></td>
+  </tr>
+  
+   <tr>
+    <td id="data8"> 
+      <input id="ticker8" placeholder="enter ticker symbol">
+      
+      <button class="submit" onclick="submit(8);">
+      Submit
+    </button>
+    
+    </td>
+    <td class="ni" id="ni8"></td>
+             <td class="ni" id="cr8"></td>
+    <td class="ni" id="pcf8"></td>
+    <td class="ni" id="cfb8"></td>
+    <td class="ni" id="cfc8"></td>
+    <td class="ni" id="at8"></td>
+    <td class="ni" id="roe8"></td>
+  </tr>
+  
+   <tr>
+    <td id="data9"> 
+      <input id="ticker9" placeholder="enter ticker symbol">
+      
+      <button class="submit" onclick="submit(9);">
+      Submit
+    </button>
+    
+    </td>
+    <td class="ni" id="ni9"></td>
+             <td class="ni" id="cr9"></td>
+    <td class="ni" id="pcf9"></td>
+    <td class="ni" id="cfb9"></td>
+    <td class="ni" id="cfc9"></td>
+    <td class="ni" id="at9"></td>
+    <td class="ni" id="roe9"></td>
+  </tr>
+  
+   <tr>
+    <td id="data10"> 
+      <input id="ticker10" placeholder="enter ticker symbol">
+      
+      <button class="submit" onclick="submit(10);">
+      Submit
+    </button>
+    
+    </td>
+    <td class="ni" id="ni10"></td>
+             <td class="ni" id="cr10"></td>
+    <td class="ni" id="pcf10"></td>
+    <td class="ni" id="cfb10"></td>
+    <td class="ni" id="cfc10"></td>
+    <td class="ni" id="at10"></td>
+    <td class="ni" id="roe10"></td>
+  </tr>
+  
+</table>
+    
+        
+        
+  <button onclick="saveData();">
+    Save Data
+        </button>      
+        
+        
+        
+         <select id="load"></select> <button onclick="load_comic()">Go</button>
+        
+        
+        
+        
+        
+        
+        
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDuJy8OuFAzYK98Vz0h7yPbCLjIr3kI7Vk",
+      authDomain: "bapps-finance.firebaseapp.com",
+      databaseURL: "https://bapps-finance.firebaseio.com",
+      projectId: "bapps-finance",
+      storageBucket: "bapps-finance.appspot.com",
+      messagingSenderId: "272342268639"
+    };
+    firebase.initializeApp(config);
+    
+
+    
+    
+    
+    //firebase
+    
+     function createStoryJSON(){
+
+        // story below is a JSON object
+        var story = {}
+
+        
+        story["author"] = document.getElementById("comic-author").innerHTML;
+
+        for(var i = 1; i<=10; i++){
+          story["data"+i]= document.getElementById('data'+i).innerHTML;
+          
+          story["ni"+i] = document.getElementById('ni'+i).innerHTML;
+          story["cr"+i] = document.getElementById('cr'+i).innerHTML;
+          story["pcf"+i] = document.getElementById('pcf'+i).innerHTML;
+          story["cfb"+i] = document.getElementById('cfb'+i).innerHTML;
+          story["cfc"+i] = document.getElementById('cfc'+i).innerHTML;
+          story["at"+i] = document.getElementById('at'+i).innerHTML;
+          story["roe"+i] = document.getElementById('roe'+i).innerHTML;
+
+
+        }
+        return story;
+      }
+
+      //save data in Firebase
+      function saveData(){
+         
+        firebase.database().ref().push(createStoryJSON());
+
+        alert("data saved");  //in real app you need to use firebase API to get this confirmation.
+      }
+      
+      var storyArray=[]; // we made this as global variable so that load_comic() function could use this data to display a given story
+      
+      function readData (){  
+        //whenever the data changes, put the data into an array called productArray  and then 
+        //call a function displayData to show the information in this array
+        var loc=firebase.database().ref();
+        
+        firebase.database().ref().on('value',function(snapshot) {
+
+              //data = snapshot.val();
+              // now the global variable data is the content of path
+              console.log("got snapshot of all objects at this point in time"); 
+              snapshot.forEach(function(loc){
+                storyArray.push(loc.val());
+              });
+              //alert(JSON.stringify(storyArray));
+              updateStoryNames(storyArray);
+            }
+
+                                    );
+
+
+      }
+
+       
+
+      function updateStoryNames(arr){
+        //we are assuming that the array that this function gets is the JSON object that is stored in FIREBASE
+        var pointerToSelectElement=document.getElementById("load");
+        var newOption;
+        
+        
+        for (var i=0;i<arr.length;i++){
+          //alert(arr[i].title+" : By - "+arr[i].author);
+          newOption=document.createElement("option");
+          newOption.text=" : By - "+arr[i].author;
+          pointerToSelectElement.add(newOption);  
+        }
+
+      }
+
+      function load_comic(){
+        //1. get the index of the selected option in the dropdown menu (i.e., the select element).
+        //this index can be used to find out which index in the JSON object array has out story related data
+        //alert(document.getElementById("load-comic").selectedIndex)
+        //alert(storyArray[document.getElementById("load-comic").selectedIndex])
+        //alert(storyArray[document.getElementById("load-comic").selectedIndex].title)
+
+        var storyObj=storyArray[document.getElementById("load").selectedIndex]
+        console.log(storyObj);
+        
+        // now the rest of the code will be similar to createStoryJSON()
+        // instead of getting the values from HTML elements, we will set the values based on the data in the StoryObj object that we got from FIREBASE
+        
+       
+
+        for(var i = 1; i<=10; i++){
+          document.getElementById('data'+i).innerHTML=storyObj["data"+i];
+          document.getElementById('ni'+i).innerHTML=storyObj["ni"+i] ;
+          document.getElementById('cr'+i).innerHTML=storyObj["cr"+i] ;
+          document.getElementById('pcf'+i).innerHTML=storyObj["pcf"+i] ;
+          document.getElementById('cfb'+i).innerHTML=storyObj["cfb"+i] ;
+        document.getElementById('cfc'+i).innerHTML=storyObj["cfc"+i] ;
+         document.getElementById('at'+i).innerHTML=storyObj["at"+i] ;
+          document.getElementById('roe'+i).innerHTML=storyObj["roe"+i] ;
+          document.getElementById('comic-author').innerHTML=storyObj["author"] ;
+
+          
+          
+          
+          
+          document.getElementById('ni'+i).style.display="inline-block" ;
+          document.getElementById('ni0').style.display="inline-block";
+           document.getElementById('cr').style.display="inline-block";
+          document.getElementById('pcf').style.display="inline-block";
+          document.getElementById('cfb').style.display="inline-block";
+          document.getElementById('cfc').style.display="inline-block";
+          document.getElementById('at').style.display="inline-block";
+          document.getElementById('roe').style.display="inline-block";
+
+         document.getElementById('cr'+i).style.display="inline-block";
+          document.getElementById('pcf'+i).style.display="inline-block";
+          document.getElementById('cfb'+i).style.display="inline-block";
+        document.getElementById('cfc'+i).style.display="inline-block";
+         document.getElementById('at'+i).style.display="inline-block";
+          document.getElementById('roe'+i).style.display="inline-block";
+
+
+        }
+        
+        
+        // similar to display_caption() function
+        // we hide the input box to take theme information from user and make the caption box visible
+        // only difference is that we have to do this for all the panels 
+        // so we use a loop
+        
+      }
+        
+    
+    
+    
+    
+    
+    
+    
+  </script>
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      <div class="component">
+				<!-- Start Nav Structure -->
+				<button class="cn-button" id="cn-button">Menu</button>
+				<div class="cn-wrapper" id="cn-wrapper">
+					<ul>
+						<li><a href="index.html"><span>Home</span></a></li>
+						<li><a href="balance-sheet.html"><span>Balance <br> Sheet</span></a></li>
+						<li><a href="cash-flow.html"><span>Cash Flow <br> Statement</span></a></li>
+						<li><a href="income-statement.html"><span>Income <br> Statement</span></a></li>
+						<li><a href="comparabless.html"><span>Comparables</span></a></li>
+
+					 </ul>
+				</div>
+				<!-- End of Nav Structure -->
+			</div>
+      
+		</div><!-- /container -->
+		<script src="polyfills.js"></script>
+		<script src="demo2.js"></script>
+		<!-- For the demo ad only -->   
+<script src="http://tympanus.net/codrops/adpacks/demoad.js"></script>
+
+        
+
+
+
+		<!-- jaquery link -->
+
+		<script src="jquery.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        
+        <!--modernizr.min.js-->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		
+		<!--bootstrap.min.js-->
+        <script type="text/javascript" src="bootstrap.min.js"></script>
+		
+		<!-- bootsnav js -->
+		<script src="bootsnav.js"></script>
+		
+		<!-- for manu -->
+		<script src="jquery.hc-sticky.min.js" type="text/javascript"></script>
+
+		
+		<!-- vedio player js -->
+		<script src="jquery.magnific-popup.min.js"></script>
+
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+		<!-- isotope js -->
+		<!-- <script src="masonry.min.js"></script>
+		<script src="isotop-custom.js"></script> -->
+
+        <!--owl.carousel.js-->
+        <script type="text/javascript" src="/owl.carousel.min.js"></script>
+		
+		<!-- counter js -->
+		<script src="jquery.counterup.min.js"></script>
+		<script src="/waypoints.min.js"></script>
+		
+        <!--Custom JS-->
+        <script type="text/javascript" src="jak-menusearch.js"></script>
+        <script type="text/javascript" src="/custom.js"></script>
+		
+
+    </body>
+	
+</html>
+
+
+
