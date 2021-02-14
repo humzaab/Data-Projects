@@ -1,0 +1,22 @@
+Description 
+To examine what variables were influential in predicting i12_health_6 and parameter tune a model to create a strong prediction model.
+
+Data Used:
+Dataset containing information on COVID-19-related behaviors collected by the Institute of Global Health Innovation Imperial College London.
+80 Variables Included
+
+Target Variable:
+“Avoided going out in general” (i12_health_6)
+
+Scriptng Language: 
+Python
+
+Concepts Practiced:
+-Decision Tree Classifier
+-KNN
+-GridSearchCV
+-KFold
+-MinMaxScaler
+-Classification Report
+-General EDA
+-Traing and Test Split
