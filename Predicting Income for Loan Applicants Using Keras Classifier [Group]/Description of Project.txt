@@ -1,0 +1,21 @@
+Description 
+To utilize Keras classifier and neural networks to help determine if a customer has income over $50,000 for loan approval. 
+The model is tuned using gridsearchCV and sensitivity analysis is used to determine feature importance.
+
+Data Used:
+92 Variables
+
+Target Variable:
+Income Over $50,000 per year or not
+
+Scriptng Language: 
+Python
+
+Concepts Practiced:
+-Keras Classifier
+-Neural Networks
+-Early Stopping
+-GridSearchCV
+-KFold
+-Train Test Split
+-Eli5
