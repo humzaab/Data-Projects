@@ -1,0 +1,19 @@
+Description 
+To examine what variables were influential in predicting wheteher an auction was competitive or not.
+
+Data Used:
+8 Variables
+
+Target Variable:
+Competitive?
+
+Scriptng Language: 
+Python
+
+Concepts Practiced:
+-Decision Tree Classifier
+-Random Forest Classifier
+-KFold
+-Classification Report
+-General EDA
+-Traing and Test Split
